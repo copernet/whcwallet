@@ -1,0 +1,39 @@
+stages:
+- deploy_dev
+- deploy_testnet
+- deploy_mainnet
+
+before_script:
+- export GOPATH=/home/gitlab-runner/gopath
+
+deploy_dev:
+  stage: deploy_dev
+  tags:
+  - aws-wormhole
+  script:
+  - rm -rf $GOPATH/src/github.com/copernet/$CI_PROJECT_NAME
+  - cp -r ../$CI_PROJECT_NAME	 $GOPATH/src/github.com/copernet
+
+deploy_testnet:
+  stage: deploy_testnet
+  tags:
+  - aws-wormhole-testnet
+  script:
+  - rm -rf $GOPATH/src/github.com/copernet/$CI_PROJECT_NAME
+  - cp -r ../$CI_PROJECT_NAME	 $GOPATH/src/github.com/copernet
+
+deploy_mainnet_group_a:
+  stage: deploy_mainnet
+  tags:
+  - aws-wormhole-mainnet
+  script:
+  - rm -rf $GOPATH/src/github.com/copernet/$CI_PROJECT_NAME
+  - cp -r ../$CI_PROJECT_NAME	 $GOPATH/src/github.com/copernet
+
+deploy_mainnet_group_b:
+  stage: deploy_mainnet
+  tags:
+  - aws-wormhole-mainnet-group-b
+  script:
+  - rm -rf $GOPATH/src/github.com/copernet/$CI_PROJECT_NAME
+  - cp -r ../$CI_PROJECT_NAME	 $GOPATH/src/github.com/copernet

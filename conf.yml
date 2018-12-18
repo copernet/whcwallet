@@ -1,0 +1,62 @@
+go_version: 1.10.0
+version: 0.0.1
+
+testnet: true
+
+private:
+  recaptcha_private: "6Lfm924UAAAAAKfM9NcpLH7Xl_VDpA0ThcBKSyb8"
+  server_secret: "UYMjfpvkrC"
+  session_secret: "Mh5mvNFI3C"
+  aes_secret: "8RKGGBE2SJEPAXGG"
+  login_difficulty: "0400"
+db:
+  user: cp
+  passwd: copernicus
+  host: 13.229.155.155
+  port: 3306
+  database: wormhole
+  sql_log: true
+  maxopenconnection: 50
+  maxidleconnection: 30
+  maxconnectionlifetime: 10
+walletdb:
+  user: cp
+  passwd: copernicus
+  host: 13.229.155.155
+  port: 3306
+  database: wormhole
+  sql_log: true
+  maxopenconnection: 50
+  maxidleconnection: 30
+  maxconnectionlifetime: 10
+redis:
+  passwd:
+  host: 127.0.0.1
+  port: 6379
+  db_num: 0
+  timeout: 3000
+  max_idle_conns: 10
+  max_open_conns: 20
+  initial_open_conns: 5
+log:
+  filename: app.log
+  level: debug
+  maxage: 168
+  rotationtime: 24
+tx:
+  mini_output: 546
+rpc:
+  user: rpc
+  passwd: V6ASfUg6RXhX5K16eJ6ZLCiws7mc0S
+  host: 39.104.125.149
+  port: 18332
+mail:
+  host: email-smtp.us-west-2.amazonaws.com
+  port: 587
+  user_name: noreply@wormhole.awsapps.com
+  smtp_user: AKIAITTFF7KRC4B4Q6JA
+  smtp_pass: AkuQuixCVgVRlNWMrDpz4rChSlQruC/4ZKW1oO8dKloO
+  from_name: wormhole.cash
+Electron:
+  Host: api.wormhole.cash
+  Port: 9629
