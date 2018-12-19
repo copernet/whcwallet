@@ -24,7 +24,7 @@ func testGo() {
 }
 
 func TestMailTo(t *testing.T) {
-	to := "hongjia.hu@bitmain.com"
+	to := ""
 	mailConf := config.GetConf().Mail
 
 	// Create a new message.
@@ -75,6 +75,6 @@ func TestMailTpl(t *testing.T) {
 
 func TestMail(t *testing.T) {
 	walletId := "64db5a00-4470-42ee-a674-33284073f103"
-	param := view.WalletCreateParam{"hongjia.hu@bitmain.com", "10837", "test", walletId, "d09a641fdf12d09b1a8b9655fea26440dd3f1cf34bc1a643c0f62e0743da09e3eeff2783126cf24d96fb4aebac75a19d94df33bc9f7f46e407d35d1435272418d61e6cb40b1abe2c93c04fd6a19f8c0e88f8c6ae244749c3f18192f2bbc2f493", ""}
+	param := view.WalletCreateParam{"", "10837", "test", walletId, "d09a641fdf12d09b1a8b9655fea26440dd3f1cf34bc1a643c0f62e0743da09e3eeff2783126cf24d96fb4aebac75a19d94df33bc9f7f46e407d35d1435272418d61e6cb40b1abe2c93c04fd6a19f8c0e88f8c6ae244749c3f18192f2bbc2f493", ""}
 	Mail(&param, logCtx.NewContext())
 }

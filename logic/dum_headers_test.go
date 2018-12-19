@@ -15,7 +15,7 @@ func TestDumpHeaders(t *testing.T) {
 
 func TestLoadHeaderFile(t *testing.T) {
 
-	path := "/Users/hongjia.hu/Documents/bitmain/data/file"
+	path := ""
 	file, err := os.Open(path)
 	if os.IsNotExist(err) {
 		log.WithCtx(nil).Errorf("OpenFile.error:%s", err.Error())

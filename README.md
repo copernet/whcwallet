@@ -1,4 +1,4 @@
-# Wormhole Walle API Service
+# Wormhole Wallet API Service
 
 
 
@@ -40,7 +40,7 @@ go build
 #### Config Init
 
 ```
-git clone https://github.com/copernet/whcwallet-go
+git clone https://github.com/copernet/whcwallet
 cp conf.yml.sample conf.yml
 
 #you need modify db、redis、rpc、log to your local config
@@ -49,15 +49,14 @@ cp conf.yml.sample conf.yml
 #### How To Run
 
 ```
-cd ${gopath}/src/github.com/copernet/whcwallet-go
+cd ${gopath}/src/github.com/copernet/whcwallet
 mkdir logs
 go build
 
 #start
-tools/run start whcwallet-go
+tools/run start whcwallet
 #stop 
-tools/run stop whcwallet-go
+tools/run stop whcwallet
 ```
 
 ## Document
-whcwallet
