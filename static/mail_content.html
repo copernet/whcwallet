@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+    <title>Wormhole Email</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font: 13px Helvetica, Arial;
+            background-color: #fff;
+            padding: 50px;
+        }
+        .content-container{
+
+        }
+        .title-container{
+            display: none;
+            height: 105px;
+            border-radius: 8px;
+            box-shadow: 0 8px 12px 5px rgba(23, 116, 255, 0.05);
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .welcome-title{
+            font-size: 22px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #333333;
+        }
+        .wallet-id-container{
+            margin-top: 20px;
+            border-radius: 8px;
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 20px 32px 32px 32px;
+        }
+        .wallet-id-container .title{
+            font-size: 18px;
+            font-weight: 600;
+            color: #1774ff;
+        }
+        .wallet-id-inner{
+            display: inline-block;
+            border-radius: 8px;
+            background-color: #1774ff;
+            text-align: center;
+            font-size: 16px;
+            letter-spacing: 1px;
+            color: #ffffff;
+            padding: 20px 35px;
+            margin-top: 15px;
+        }
+        .impor-tips{
+            font-size: 15px;
+            font-weight: 500;
+            color: #616a7f;
+            margin-top: 30px;
+        }
+        .impor-desc{
+            font-size: 13px;
+            color: #a4a9b3;
+            margin-top: 20px;
+        }
+        .social-body{
+            margin-top: 35px;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+        }
+        .social-container{
+
+        }
+        .social-container .social-item{
+            display: inline-block;
+            width: 49px;
+            height: 49px;
+            background-color: rgba(97, 106, 127, 0.1);
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        .social-item-img{
+
+        }
+        .social-item{
+            box-sizing: border-box;
+        }
+        .social-item .github{
+            display: inline-block;
+            width: 23px;
+            height: 25px;
+            margin-top: 13px;
+            margin-bottom: -4px;
+            margin-left: 13px;
+            background-size: cover;
+            background-image: url('https://wallet.wormhole.cash/static/github_3x.png')
+        }
+        .social-item .medium{
+            display: inline-block;
+            width: 25px;
+            height: 21px;
+            margin-top: 12px;
+            margin-left: 14px;
+            background-size: cover;
+            background-image: url('https://wallet.wormhole.cash/static/medium_3x.png')
+        }
+        .social-item .twitter{
+            display: inline-block;
+            width: 24px;
+            height: 21px;
+            margin-top: 12px;
+            margin-left: 14px;
+            background-size: cover;
+            background-image: url('https://wallet.wormhole.cash/static/twitter_3x.png')
+        }
+        .social-container .social-item:hover{
+            background-color: rgba(97, 106, 127, 0.5);
+        }
+        .copy-right{
+            margin-top: 20px;
+            font-size: 13px;
+            color: #a4a9b3;
+        }
+        .logo-img{
+            display: inline-block;
+            height: 40px;
+            margin-bottom: -50px;
+        }
+    </style>
+</head>
+<body>
+<div class='content-container'>
+    <!-- <div class='title-container'>
+      <img src="https://wallet.wormhole.cash/static/logo-dark.png" alt="wormhole log" class='logo-img'>
+    </div> -->
+    <div class='welcome-title'>Hi~ Welcome to Wormhole 👏👏</div>
+    <div class='wallet-id-container'>
+        <div class='title'>Your Wallet ID </div>
+        <div class='wallet-id-inner'>{{.WalletID}}</div>
+    </div>
+    <div class='impor-tips'>⚠️Use your unique Wallet ID to log into your Wormhole wallet.It's very important not to tell anyone.</div>
+    <div class='impor-desc'>This is an automatically generated email, please do not reply.</div>
+    <div class='social-body'>
+        <div class='social-container'>
+            <div class='social-item'>
+                <a class='github' href='https://github.com/copernet' target="_blank"></a>
+            </div>
+            <div class='social-item'>
+                <a class='medium' href='https://medium.com/@wormholecash' target="_blank"></a>
+            </div>
+            <div class='social-item'>
+                <a class='twitter' href='https://twitter.com/WormholeCash' target="_blank"></a>
+            </div>
+        </div>
+        <div class='logo-container'>
+            <img src="https://wallet.wormhole.cash/static/logo-dark.png" alt="wormhole log" class='logo-img'>
+        </div>
+    </div>
+    <div class='copy-right'>
+        Copyright © 2018 Wormhole Company.
+    </div>
+</div>
+</body>
+</html>

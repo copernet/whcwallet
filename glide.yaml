@@ -1,0 +1,53 @@
+package: github.com/copernet/whcwallet
+import:
+- package: github.com/bcext/cashutil
+  version: 9ba6cf2922836010e02658df743533b995b0d947
+  subpackages:
+  - base58
+- package: github.com/bcext/gcash
+  version: 067de8b6c8108fb5df47ccbea453b0c6e727d5ba
+  subpackages:
+  - blockchain
+  - chaincfg
+  - chaincfg/chainhash
+  - txscript
+  - wire
+- package: github.com/copernet/go-electrum
+  repo: https://wormhole-cash:RbVUgHsQGKyy84MoBkV3k1X@gitlab.com/copernet/go-electrum.git
+  version: 238ce9ef7cfc865c37e55bdfce41b5d9e1ab3e90
+  subpackages:
+  - electrum
+- package: github.com/copernet/whc.go
+  version: 54048a4a08d83a5e5f6f58287ff7acea6fccf756
+  subpackages:
+  - btcjson
+  - rpcclient
+- package: github.com/copernet/whccommon
+  repo: https://wormhole-cash:RbVUgHsQGKyy84MoBkV3k1X@gitlab.com/copernet/whccommon.git
+  version: 25b2d5f3a7e61741d0e1ce999a4500e5fbcdf161
+  subpackages:
+  - log
+  - model
+- package: github.com/domodwyer/mailyak
+- package: github.com/gin-gonic/gin
+- package: github.com/go-sql-driver/mysql
+- package: github.com/gomodule/redigo
+  subpackages:
+  - redis
+- package: github.com/gorilla/websocket
+- package: github.com/hgfischer/go-otp
+- package: github.com/jinzhu/gorm
+- package: github.com/pkg/errors
+- package: github.com/satori/go.uuid
+- package: github.com/shopspring/decimal
+- package: github.com/sirupsen/logrus
+- package: github.com/spf13/viper
+- package: github.com/tidwall/gjson
+- package: golang.org/x/net
+  subpackages:
+  - context
+- package: gopkg.in/fatih/set.v0
+testImport:
+- package: github.com/smartystreets/goconvey
+  subpackages:
+  - convey
