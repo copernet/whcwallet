@@ -1,0 +1,63 @@
+#!/bin/bash
+
+WORMHOLE=~/.wormhole
+
+if [ ! -d "$WORMHOLE/$2" ]
+then
+	mkdir -p $WORMHOLE/$2
+fi
+
+if [ ! -d "~/www" -o ! -d "~/www/$2" ]
+then
+    mkdir -p ~/www/$2
+fi
+
+if [ ! -f "./logs/app.log" ]
+then
+	mkdir logs
+	pushd logs
+	touch app.log
+	popd
+fi
+
+start(){
+	if [ -f "$WORMHOLE/$1/$1.pid" ]
+	then
+		stop $1
+	fi
+	time=`date | awk {'print $1$2$3$4'}`
+	mv ./logs/system.log ./logs/system.log.$time
+	nohup ./$1 >> ./logs/system.log  2>&1  &
+	pid=$!
+	echo $pid > $WORMHOLE/$1/$1.pid
+	touch bone
+	
+	servername=`ps -ef | grep $pid | awk NR==1{'print $8'}`
+	if [ $servername != ./$1 ]
+	then
+		echo `tail -n 20 ./logs/system.log`
+		exit 1
+	fi
+}
+
+stop(){
+	rm -f bone
+	sleep 10
+	pid=`cat $WORMHOLE/$1/$1.pid`
+	kill -9 $pid
+	rm -rf $WORMHOLE/$1/$1.pid
+}
+
+
+case $1 in
+    "start") start $2
+	;;
+	"stop") stop $2
+	;;
+	*) echo 'run [command] [servername]'
+	   echo 'command:'
+	   echo '	start - "start the server"'
+	   echo '	stop  - "stop the server"'
+esac
+
+

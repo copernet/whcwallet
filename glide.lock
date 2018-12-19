@@ -1,0 +1,268 @@
+hash: b65583894b4d42c91835cd7932c5be0128ad75beaa475a6abd2e58ef444de43b
+updated: 2018-11-21T17:29:09.070308+08:00
+imports:
+- name: github.com/bcext/cashutil
+  version: 9ba6cf2922836010e02658df743533b995b0d947
+  subpackages:
+  - base58
+- name: github.com/bcext/gcash
+  version: 067de8b6c8108fb5df47ccbea453b0c6e727d5ba
+  subpackages:
+  - blockchain
+  - btcec
+  - chaincfg
+  - chaincfg/chainhash
+  - database
+  - txscript
+  - wire
+- name: github.com/btcsuite/btclog
+  version: 84c8d2346e9fc8c7b947e243b9c24e6df9fd206a
+- name: github.com/btcsuite/go-socks
+  version: 4720035b7bfd2a9bb130b1c184f8bbe41b6f0d0f
+  subpackages:
+  - socks
+- name: github.com/btcsuite/websocket
+  version: 31079b6807923eb23992c421b114992b95131b55
+- name: github.com/campoy/embedmd
+  version: c59ce00e02967db5e93d897330142a3ef6145786
+  subpackages:
+  - embedmd
+- name: github.com/client9/misspell
+  version: c0b55c8239520f6b5aa15a0207ca8b28027ba49e
+  subpackages:
+  - cmd/misspell
+- name: github.com/copernet/go-electrum
+  version: 238ce9ef7cfc865c37e55bdfce41b5d9e1ab3e90
+  repo: https://wormhole-cash:RbVUgHsQGKyy84MoBkV3k1X@gitlab.com/copernet/go-electrum.git
+  subpackages:
+  - electrum
+- name: github.com/copernet/whc.go
+  version: 54048a4a08d83a5e5f6f58287ff7acea6fccf756
+  subpackages:
+  - btcjson
+  - rpcclient
+- name: github.com/copernet/whccommon
+  version: 25b2d5f3a7e61741d0e1ce999a4500e5fbcdf161
+  repo: https://wormhole-cash:RbVUgHsQGKyy84MoBkV3k1X@gitlab.com/copernet/whccommon.git
+  subpackages:
+  - log
+  - model
+- name: github.com/domodwyer/mailyak
+  version: 6ab6b52da63b686ef3036e5566795ddc3c0d5c1d
+- name: github.com/dustin/go-broadcast
+  version: f664265f5a662fb4d1df7f3533b1e8d0e0277120
+- name: github.com/fsnotify/fsnotify
+  version: ccc981bf80385c528a65fbfdd49bf2d8da22aa23
+- name: github.com/gin-contrib/sse
+  version: 22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae
+- name: github.com/gin-gonic/autotls
+  version: be87bd5ef97b7398e468c35ad266aabf099a095b
+- name: github.com/gin-gonic/gin
+  version: b524e29442c4948052be887570b4bced28682e6b
+  subpackages:
+  - binding
+  - internal/json
+  - render
+- name: github.com/go-sql-driver/mysql
+  version: fd197cdcfae0c686792ef5399f223f5b66a30b6b
+- name: github.com/golang/protobuf
+  version: 1918e1ff6ffd2be7bed0553df8650672c3bfe80d
+  subpackages:
+  - proto
+  - ptypes
+  - ptypes/any
+  - ptypes/duration
+  - ptypes/timestamp
+- name: github.com/gomodule/redigo
+  version: e8fc0692a7e26a05b06517348ed466349062eb47
+  subpackages:
+  - redis
+- name: github.com/gorilla/websocket
+  version: 483fb8d7c32fcb4b5636cd293a92e3935932e2f4
+- name: github.com/hashicorp/hcl
+  version: 65a6292f0157eff210d03ed1bf6c59b190b8b906
+  subpackages:
+  - hcl/ast
+  - hcl/parser
+  - hcl/printer
+  - hcl/scanner
+  - hcl/strconv
+  - hcl/token
+  - json/parser
+  - json/scanner
+  - json/token
+- name: github.com/hgfischer/go-otp
+  version: 075355fbdf601292ff9f7d61b39b6d3f5a5a3c45
+- name: github.com/jessevdk/go-assets
+  version: 4f4301a06e153ff90e17793577ab6bf79f8dc5c5
+- name: github.com/jinzhu/gorm
+  version: 742154be9a26e849f02d296073c077e0a7c23828
+  subpackages:
+  - dialects/mysql
+- name: github.com/jinzhu/inflection
+  version: 04140366298a54a039076d798123ffa108fff46c
+- name: github.com/json-iterator/go
+  version: 05d041de1043ba04b678fb046bd35455a9b1b33b
+- name: github.com/konsorten/go-windows-terminal-sequences
+  version: 5c8c8bd35d3832f5d134ae1e1e375b69a4d25242
+- name: github.com/lestrrat/go-file-rotatelogs
+  version: d3151e2a480fdcd05fb97102f5310a47d96274c4
+- name: github.com/lestrrat/go-strftime
+  version: ba3bf9c1d0421aa146564a632931730344f1f9f1
+- name: github.com/magiconair/properties
+  version: c2353362d570a7bfa228149c62842019201cfb71
+- name: github.com/manucorporat/stats
+  version: 3ba42d56d227cf2a6086b63baba5e00669235853
+- name: github.com/mattn/go-isatty
+  version: 3fb116b820352b7f0c281308a4d6250c22d94e27
+- name: github.com/mitchellh/mapstructure
+  version: 3536a929edddb9a5b34bd6861dc4a9647cb459fe
+- name: github.com/modern-go/concurrent
+  version: bacd9c7ef1dd9b15be4a9909b8ac7a4e313eec94
+- name: github.com/modern-go/reflect2
+  version: 94122c33edd36123c84d5368cfb2b69df93a0ec8
+- name: github.com/pelletier/go-toml
+  version: 81a861c69d25a841d0c4394f0e6f84bc8c5afae0
+- name: github.com/pkg/errors
+  version: 059132a15dd08d6704c67711dae0cf35ab991756
+- name: github.com/pmezard/go-difflib
+  version: 792786c7400a136282c1664665ae0a8db921c6c2
+  subpackages:
+  - difflib
+- name: github.com/rifflock/lfshook
+  version: b9218ef580f59a2e72dad1aa33d660150445d05a
+- name: github.com/satori/go.uuid
+  version: b2ce2384e17bbe0c6d34077efa39dbab3e09123b
+- name: github.com/shopspring/decimal
+  version: cd690d0c9e2447b1ef2a129a6b7b49077da89b8e
+- name: github.com/sirupsen/logrus
+  version: 7eeb7b7cbdeb0a582a5b7a1512d91f956f1674aa
+- name: github.com/spf13/afero
+  version: d40851caa0d747393da1ffb28f7f9d8b4eeffebd
+  subpackages:
+  - mem
+- name: github.com/spf13/cast
+  version: 8c9545af88b134710ab1cd196795e7f2388358d7
+- name: github.com/spf13/jwalterweatherman
+  version: 94f6ae3ed3bceceafa716478c5fbf8d29ca601a1
+- name: github.com/spf13/pflag
+  version: 082b515c9490f4eccc758469c3152b77d139f868
+- name: github.com/spf13/viper
+  version: 62edee319679b6ceaec16de03b966102d2dea709
+- name: github.com/thinkerou/favicon
+  version: 94a442a49da6e2d44bdd5e0d2e2e185c43a19d93
+- name: github.com/tidwall/gjson
+  version: 081192fa2e471ddff3ec98a3cc04fecfd031ed57
+- name: github.com/tidwall/match
+  version: 1731857f09b1f38450e2c12409748407822dc6be
+- name: github.com/ugorji/go
+  version: e5e69e061d4f7ee3a69b793cf9c1b41afe21918e
+  subpackages:
+  - codec
+- name: golang.org/x/crypto
+  version: 4d3f4d9ffa16a13f451c3b2999e9c49e9750bf06
+  subpackages:
+  - acme
+  - acme/autocert
+  - ripemd160
+  - ssh/terminal
+- name: golang.org/x/lint
+  version: c67002cb31c3a748b7688c27f20d8358b4193582
+  subpackages:
+  - golint
+- name: golang.org/x/net
+  version: c10e9556a7bc0e7c942242b606f0acf024ad5d6a
+  subpackages:
+  - context
+  - http/httpguts
+  - http2
+  - http2/hpack
+  - idna
+  - internal/timeseries
+  - trace
+- name: golang.org/x/sys
+  version: 9b800f95dbbc54abff0acf7ee32d88ba4e328c89
+  subpackages:
+  - unix
+  - windows
+- name: golang.org/x/text
+  version: 6f44c5a2ea40ee3593d98cdcc905cc1fdaa660e2
+  subpackages:
+  - secure/bidirule
+  - transform
+  - unicode/bidi
+  - unicode/norm
+- name: golang.org/x/tools
+  version: 92b943e6bff73e0dfe9e975d94043d8f31067b06
+  subpackages:
+  - go/ast/astutil
+  - go/gcexportdata
+  - go/internal/gcimporter
+- name: google.golang.org/appengine
+  version: 4a4468ece617fc8205e99368fa2200e9d1fad421
+  subpackages:
+  - cloudsql
+- name: google.golang.org/genproto
+  version: c830210a61dfaa790e1920f8d0470fc27bc2efbe
+  subpackages:
+  - googleapis/rpc/status
+- name: google.golang.org/grpc
+  version: 59a2cfbdf9272f6334fe4856b6e7c8d212845b3d
+  subpackages:
+  - balancer
+  - balancer/base
+  - balancer/roundrobin
+  - binarylog/grpc_binarylog_v1
+  - codes
+  - connectivity
+  - credentials
+  - encoding
+  - encoding/proto
+  - grpclog
+  - internal
+  - internal/backoff
+  - internal/binarylog
+  - internal/channelz
+  - internal/envconfig
+  - internal/grpcrand
+  - internal/transport
+  - keepalive
+  - metadata
+  - naming
+  - peer
+  - resolver
+  - resolver/dns
+  - resolver/passthrough
+  - stats
+  - status
+  - tap
+- name: gopkg.in/fatih/set.v0
+  version: 2c768e3c5489976167bfc42b5c7c92ca783f4389
+- name: gopkg.in/go-playground/validator.v8
+  version: 5f1438d3fca68893a817e4a66806cea46a9e4ebf
+- name: gopkg.in/yaml.v2
+  version: 5420a8b6744d3b0345ab293f6fcba19c978f1183
+testImports:
+- name: github.com/gopherjs/gopherjs
+  version: 0766667cb4d1cfb8d5fde1fe210ae41ead3cf589
+  subpackages:
+  - js
+- name: github.com/jtolds/gls
+  version: 77f18212c9c7edc9bd6a33d383a7b545ce62f064
+- name: github.com/qshuai/tcolor
+  version: 075b3b99ca30f1411d811450749d3ce9f7041755
+- name: github.com/smartystreets/assertions
+  version: b2de0cb4f26d0705483a2f495d89896d0b808573
+  subpackages:
+  - internal/go-render/render
+  - internal/oglematchers
+- name: github.com/smartystreets/goconvey
+  version: ef6db91d284a0e7badaa1f0c404c30aa7dee3aed
+  subpackages:
+  - convey
+  - convey/gotest
+  - convey/reporting
+- name: gopkg.in/alexcesaro/quotedprintable.v3
+  version: 2caba252f4dc53eaf6b553000885530023f54623
+- name: gopkg.in/gomail.v2
+  version: 81ebce5c23dfd25c6c67194b37d3dd3f338c98b1
