@@ -12,9 +12,9 @@ Wormhole is a fast, portable Omni Layer implementation that is based off the Bit
 
 | Package | Version |
 | :------ | ------- |
-| Mysql   |         |
-| Golang  |         |
-| Redis   |         |
+| Mysql   |   5.7+      |
+| Golang  |    	1.10+     |
+| Redis   |    	4.0+     |
 
 #### Database Init
 
