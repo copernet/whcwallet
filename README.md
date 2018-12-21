@@ -60,5 +60,5 @@ tools/run stop whcwallet
 ```
 
 ## Document
-[whcwallet](https://github.com/EmbraceDD/whcwallet/blob/master/doc/whcwallet.md)
+[whcwallet](./doc/whcwallet.md)
 
